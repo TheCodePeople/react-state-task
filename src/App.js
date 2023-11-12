@@ -1,4 +1,5 @@
 import "./App.css";
+import MagicBall from "./components/MagicBall";
 
 const answers = [
   "Yes",
@@ -14,7 +15,12 @@ const answers = [
 ];
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <h1 className="title">Magic Ball</h1>
+      <MagicBall answers={answers} />
+    </div>
+  );
 }
 
 export default App;
